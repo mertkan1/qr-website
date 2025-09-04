@@ -2,5 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { --bg: #fff; --fg: #111; }
-html, body { height: 100%; background: var(--bg); color: var(--fg); }
+:root { 
+  --bg: #f8fafc; 
+  --fg: #1e293b; 
+}
+
+html, body { 
+  height: 100%; 
+  background: var(--bg); 
+  color: var(--fg); 
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
