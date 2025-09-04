@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export default function PlanCard({
   name, price, onBuy
-}: { name: string; price: string; onBuy: (plan: string) => void }) {
+}: { name: string; price: string; onBuy: (plan: string) => Promise<void> }) {
   const [loading, setLoading] = useState(false)
   return (
     <div className="rounded-2xl border p-4 flex flex-col gap-3">
